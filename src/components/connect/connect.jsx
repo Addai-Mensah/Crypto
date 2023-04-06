@@ -20,6 +20,7 @@ import {
     ModalBody,
     ModalCloseButton,
   } from '@chakra-ui/react'
+import Card from './Card.jsx';
 
 
 function Connect() {
@@ -93,10 +94,7 @@ function Connect() {
             <ModalBody pb={6}>
               
               
-              
-  
-              
-            </ModalBody>
+                </ModalBody>
   
             <ModalFooter>
               <Button colorScheme='blue' mr={3}>
@@ -106,19 +104,6 @@ function Connect() {
             </ModalFooter>
           </ModalContent>
         </Modal>
-
-
-
-
-
-
-
-
-
-
-
-      
-
 
         <div className='py-3 hero' >
            <div className='flex items-center justify-center w-full boxshadows'> 
@@ -139,15 +124,16 @@ function Connect() {
 
         <div className = "sm:px-[10rem]  grid grid-cols-3 sm:grid-cols-6 sm:gap-10 pb-[3rem]">
 
-          {cryptoLinks.map((coins,index) =>[
-            <div>
-              <div className="mb-[2rem]">
-                <img onClick={onOpen} className="sm:w-[5rem] w-[3rem] mb-[0.2rem] mx-auto " key={coins.id} src={coins.img} alt="" />
-                <h7 className="text-[0.7rem] flex items-center justify-center" key={coins.id}>{coins.name}</h7>
-              </div>
-            </div>
+        {cryptoLinks.map((coins, index) =>(
+            <Card item={coins} key={index}/>
+            // <div>
+            //   <div className="mb-[2rem]">
+            //     <img onClick={onOpen} className="sm:w-[5rem] w-[3rem] mb-[0.2rem] mx-auto " key={coins.id} src={coins.img} alt="" />
+            //     <h7 className="text-[0.7rem] flex items-center justify-center" key={coins.id}>{coins.name}</h7>
+            //   </div>
+            // </div>
 
-          ])}
+         ) )}
 
         </div>
     </div>
