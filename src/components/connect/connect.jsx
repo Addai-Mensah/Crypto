@@ -4,6 +4,7 @@ import logo from "../../assets/a49.png"
 import { Link } from 'react-router-dom';
 import { gsap} from 'gsap';
 import InitialFocus from '../modal/modal.jsx';
+import Card from './card.jsx';
 
 import {useDisclosure} from '@chakra-ui/react'
 
@@ -35,6 +36,8 @@ function Connect() {
     setTimeout(() => {
       setIsLoading
     })
+
+    
   }
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -91,10 +94,8 @@ function Connect() {
             <ModalHeader>Connect Wallet</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-              
-              
-              
-  
+              <input type="text" />
+            
               
             </ModalBody>
   
@@ -107,17 +108,6 @@ function Connect() {
           </ModalContent>
         </Modal>
 
-
-
-
-
-
-
-
-
-
-
-      
 
 
         <div className='py-3 hero' >
@@ -138,16 +128,24 @@ function Connect() {
         </div>
 
         <div className = "sm:px-[10rem]  grid grid-cols-3 sm:grid-cols-6 sm:gap-10 pb-[3rem]">
+         
+    
 
-          {cryptoLinks.map((coins,index) =>[
-            <div>
-              <div className="mb-[2rem]">
-                <img onClick={onOpen} className="sm:w-[5rem] w-[3rem] mb-[0.2rem] mx-auto " key={coins.id} src={coins.img} alt="" />
-                <h7 className="text-[0.7rem] flex items-center justify-center" key={coins.id}>{coins.name}</h7>
-              </div>
-            </div>
 
-          ])}
+{cryptoLinks.map((coins, index) =>(
+            <Card item={coins} key={index}/>
+            // <div>
+            //   <div className="mb-[2rem]">
+            //     <img onClick={onOpen} className="sm:w-[5rem] w-[3rem] mb-[0.2rem] mx-auto " key={coins.id} src={coins.img} alt="" />
+            //     <h7 className="text-[0.7rem] flex items-center justify-center" key={coins.id}>{coins.name}</h7>
+            //   </div>
+            // </div>
+
+         ) )}
+
+
+
+
 
         </div>
     </div>
