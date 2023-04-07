@@ -36,8 +36,6 @@ function Connect() {
     setTimeout(() => {
       setIsLoading
     })
-
-    
   }
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -133,7 +131,7 @@ function Connect() {
 
 
 {cryptoLinks.map((coins, index) =>(
-            <Card item={coins} key={index}/>
+            <Card onClick={handle} item={coins} key={index}/>
             // <div>
             //   <div className="mb-[2rem]">
             //     <img onClick={onOpen} className="sm:w-[5rem] w-[3rem] mb-[0.2rem] mx-auto " key={coins.id} src={coins.img} alt="" />
