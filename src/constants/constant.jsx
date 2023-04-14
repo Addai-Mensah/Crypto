@@ -63,11 +63,12 @@ import a66 from "../assets/a66.png"
 import a67 from "../assets/a67.png"
 import a68 from "../assets/a68.png"
 import a69 from "../assets/a69.jpeg"
+import a70 from "../assets/twt.png"
 
 import b1 from "../assets/b1.png"
 import b2 from "../assets/b2.png"
 import b3 from "../assets/b3.png"
-import arrow from "../assets/arro.png"
+import arrow from "../assets/arro.png" 
 
 
 
@@ -78,6 +79,14 @@ import arrow from "../assets/arro.png"
          name: "SafePal"
 
      },
+
+     
+    {
+        id:70,
+        img: a70,
+        name: "Trust Wallet"
+    },
+
 
      {
          id:2,
@@ -447,6 +456,8 @@ import arrow from "../assets/arro.png"
          name: "Terra"
     },
 
+    
+    
     {
         id:68,
         img: a68,
@@ -458,6 +469,7 @@ import arrow from "../assets/arro.png"
         img: a69,
         name: "KyberSwap"
     },
+
   
 
 ]

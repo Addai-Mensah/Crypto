@@ -28,7 +28,7 @@ function Cards() {
                     bg-[#1A1c34] content-center boxshadow mb-4 hover:scale-105 hover:ease-in-out transition hover:duration-150'>  
                     <div className='relative'>
                     <img key={tag.id} src={tag.img} alt="" className=' m-auto sm:w-[4.5rem] pt-4 sm:pt-9 sm:pb-3 z-10' />
-                    <p key={tag.ids} className="text-white text-[0.9rem] flex items-center justify-center ">{tag.name}</p>   
+                    <p key={tag.ids} className="text-white font-link text-[0.9rem] flex items-center justify-center ">{tag.name}</p>   
                     <img src={tag.arrow} alt="" className='w-[0.9rem] absolute right-1 top-1' />               
                     </div>
                 </div>    
