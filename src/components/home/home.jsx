@@ -118,10 +118,10 @@ function Home() {
 
 
         
-        d
+        
         <Link className='no-underline' to="/connect"><Cards/></Link>
         <div className='bg-[#0c0e29] sm:px-[15%] sm:mt-[3rem] '>
-            <h2 className='text-[#0d6efd]  flex text-center justify-center no-underline font-link'>Distribution</h2>
+            <h2 className='text-[#0d6efd]  flex text-center justify-center mt-[1.5rem] no-underline font-link'>Distribution</h2>
 
 
         <div className='flex items-center justify-between  sm:gap-5 mt-4'>
