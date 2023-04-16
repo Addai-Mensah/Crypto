@@ -74,12 +74,24 @@ import arrow from "../assets/arro.png"
 
 
  export const cryptoLinks = [
+
+    {
+        id:39,
+        img: a39,
+        name: "MetaMask"
+    },
+
      {
          id:1,
          img: a1,
          name: "SafePal"
 
      },
+     {
+        id:27,
+        img: a27,
+        name: "Binance"
+    },
 
      {
         id:111,
@@ -235,11 +247,7 @@ import arrow from "../assets/arro.png"
          name: "Atomic"
      },
 
-     {
-         id:27,
-         img: a27,
-         name: "Binance"
-     },
+     
 
      {
          id:28,
@@ -301,12 +309,7 @@ import arrow from "../assets/arro.png"
          name: "Alice"
      },
 
-     {
-         id:39,
-         img: a39,
-         name: "MetaMask"
-     },
-
+     
      {
          id:40,
          img: a40,
