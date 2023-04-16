@@ -20,10 +20,10 @@ function Cards() {
 
     
   return (
-    <div>
+    <div className=''>
          <div className=' sm:grid sm:grid-cols-3 gap-7 animate-pulse '>
             {landing.map((tag, index) =>(
-                <div ref={cardRef} className=' border-l-[0.5rem] border-l-[#0d6efd]  rounded-[0.3rem] w-[100%] 
+                <div ref={cardRef} className=' border-l-[0.5rem] pb-[1rem] mb-[1rem] border-l-[#0d6efd]  rounded-[0.3rem] w-[100%] 
                 h-[9rem] sm:w-[100%] sm:h-[12rem]  sm:text-[1rem]
                     bg-[#1A1c34] content-center boxshadow  hover:scale-105 hover:ease-in-out transition hover:duration-150'>  
                     <div className='relative'>

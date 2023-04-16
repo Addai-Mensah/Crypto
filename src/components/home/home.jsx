@@ -8,7 +8,7 @@ import github from "../../assets/github.png"
 import CountUp from 'react-countup';
 import { gsap} from 'gsap';
 import Cards from '../cards/cards';
-import Coinmarketcap from '../widget/coinmarketcap';
+
 
 
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -117,13 +117,14 @@ function Home() {
         <Link to="/connect"><h5 className='flex items-center justify-center text-[1rem] text-[#0d6efd] my-5 font-link'>Quick Start</h5></Link>
 
 
-        < Coinmarketcap/>
-        <Link to="/connect"><Cards/></Link>
+        
+        d
+        <Link className='no-underline' to="/connect"><Cards/></Link>
         <div className='bg-[#0c0e29] sm:px-[15%] sm:mt-[3rem] '>
-            <h2 className='text-[#0d6efd]  flex text-center justify-center font-link'>Distribution</h2>
+            <h2 className='text-[#0d6efd]  flex text-center justify-center no-underline font-link'>Distribution</h2>
 
 
-        <div className='flex items-center justify-between  sm:gap-5 mt-5'>
+        <div className='flex items-center justify-between  sm:gap-5 mt-4'>
 
                    <div>
                 <CountUp className='text-white font-bold sm:text-[1.5rem] text-[1.2rem] flex items-center justify-center '
