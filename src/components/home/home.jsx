@@ -114,7 +114,7 @@ function Home() {
         <div className='border-t-[#052047] border-t-[0.1rem] w-full ss:hidden'></div>
 
        <div className='px-[1.4rem] sm:px-[4rem] '>
-        <Link to="/connect"><h5 className='flex items-center no-underline justify-center text-[0.7rem] text-[#0d6efd] my-5 font-link'>Quick Start</h5></Link>
+        <Link to="/connect"><h5 className='flex items-center no-underline justify-center text-[0.8rem] text-[#0d6efd] my-5 font-link'>Quick Start</h5></Link>
 
 
         
