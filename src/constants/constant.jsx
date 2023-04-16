@@ -81,12 +81,7 @@ import arrow from "../assets/arro.png"
         name: "MetaMask"
     },
 
-     {
-         id:1,
-         img: a1,
-         name: "SafePal"
-
-     },
+     
      {
         id:27,
         img: a27,
@@ -97,6 +92,13 @@ import arrow from "../assets/arro.png"
         id:111,
         img: a111,
         name: "Trust Wallet"
+
+    },
+
+    {
+        id:1,
+        img: a1,
+        name: "SafePal"
 
     },
 
