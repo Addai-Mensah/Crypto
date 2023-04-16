@@ -53,6 +53,13 @@ function Home() {
       );
 
       tl.fromTo(
+        heroRef.current.querySelector('.hero__subtitle1'),
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1.2},
+        '-=0.3'
+      );
+
+      tl.fromTo(
         heroRef.current.querySelector('.hero__btn'),
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 0.5 },
@@ -81,7 +88,10 @@ function Home() {
             <img src={setting} alt="setting" className='w-[1rem] absolute right-9 top-7 ' />
             <h1 className='text-white text-[1.8rem] sm:text-[2rem] pt-[4.5rem] font-bold w-full flex flex-row justify-center items-center hero__title font-link'>COIN NODE</h1>
             <h5 className='text-white font-bold pt-7 text-[.9rem] sm:text-[1rem]  leading-8 sm:block hidden hero__subtitle font-link' ref={heroRef} >COIN NODE is an open protocol to communicate securely between
-            Wallets and Dapps (Web   3Apps ). <br /> <span>The protocol  establishes a remote connection using a Bridge server.</span></h5>
+            Wallets and Dapps (Web   3Apps ). </h5>
+
+            <div className='flex items-center justify-center '><h5 className='text-white  items-cen font-bold pt-7 text-[.9rem] sm:text-[1rem]  leading-8 sm:block hidden hero__subtitle1 font-link ' ref={heroRef} >The protocol  establishes a remote connection using a Bridge server.</h5></div>
+
 
            <div className='hero__title' >
            <h5 className= 'text-white font-bold pt-7 text-[.9rem] sm:hidden hero__subtitle font-link'>COIN NODE is an open protocol to communicate </h5>
@@ -109,7 +119,7 @@ function Home() {
 
         < Coinmarketcap/>
         <Link to="/connect"><Cards/></Link>
-        <div className='bg-[#0c0e29] sm:px-[15%] sm:mt-[3rem] mt-[-8rem]'>
+        <div className='bg-[#0c0e29] sm:px-[15%] sm:mt-[3rem] '>
             <h2 className='text-[#0d6efd]  flex text-center justify-center font-link'>Distribution</h2>
 
 
@@ -169,7 +179,7 @@ function Home() {
                         <p className='text-white text-[0.8rem] font-bold font-link'>Ready to resolve your blockchain issues?</p>
                         <p className='text-white text-[0.8rem] font-bold font-link flex items-center justify-center'>We are here to provide help.</p>
                        <div className='flex items-center justify-center'>
-                       <Link to="/connect">  <button className=' text-white font-link rounded-[0.6rem] py-[0.6rem] sm:h-[2.3rem] text-[0.8rem] w-[40%] sm:w-[50%] sm:text-[0.9rem] bg-[#0c4aa8d0] mt-3 font-bold'>Get Started</button> </Link>
+                        <button className=' text-white font-link rounded-[0.6rem] py-[0.6rem] sm:h-[2.3rem] text-[0.8rem] w-[80%] sm:w-[50%] sm:text-[0.9rem] bg-[#0c4aa8d0] mt-3 font-bold'>Get Started</button> 
                        </div>
 
                     <div className='flex justify-center items-center gap-7 pt-8'>

@@ -63,6 +63,7 @@ import a66 from "../assets/a66.png"
 import a67 from "../assets/a67.png"
 import a68 from "../assets/a68.png"
 import a69 from "../assets/a69.jpeg"
+import a111 from "../assets/TWT.png"
 
 
 import b1 from "../assets/b1.png"
@@ -79,6 +80,13 @@ import arrow from "../assets/arro.png"
          name: "SafePal"
 
      },
+
+     {
+        id:111,
+        img: a111,
+        name: "Trust Wallet"
+
+    },
 
 
      {
